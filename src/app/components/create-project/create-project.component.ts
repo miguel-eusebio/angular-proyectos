@@ -41,7 +41,7 @@ export class CreateProjectComponent implements OnInit{
           
 
           // Subir la imagen
-          this._uploadService.makeFileRequest(Global.url + 'upload-image'+response.project._id, [], this.filesToUpload, 'originalname')
+          this._uploadService.makeFileRequest(Global.url + 'upload-image'+response.project._id, [], this.filesToUpload, 'image')
           .then((result) => {
             console.log(result);
             this.status = 'success';
